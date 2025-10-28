@@ -30,6 +30,8 @@ LSM reconstructs explicit radiance fields from two unposed images in real-time, 
 
 ## Updates
 
+**[2025-10-28]** Updated LSM final checkpoint download instructions. The model is now hosted on Hugging Face: [Journey9ni/large_spatial_model](https://huggingface.co/Journey9ni/large_spatial_model).
+
 **[2025-04-12]** Added test dataset download instructions and testing process description. See [data_process/data.md](data_process/data.md) for details.
 
 **[2025-03-09]** Added ScanNet++ data preprocessing pipeline. For detailed instructions, please refer to [data_process/data.md](data_process/data.md).
@@ -110,7 +112,7 @@ LSM reconstructs explicit radiance fields from two unposed images in real-time, 
    gdown 1FTuHY1xPUkM-5gaDtMfgCl3D0gR89WV7 -O checkpoints/pretrained_models/demo_e200.ckpt
 
    # 4. LSM final checkpoint
-   gdown 1q57nbRJpPhrdf1m7XZTkBfUIskpgnbri -O checkpoints/pretrained_models/checkpoint-final.pth
+   wget -O checkpoints/pretrained_models/checkpoint-final.pth https://huggingface.co/Journey9ni/large_spatial_model/resolve/main/checkpoint-final.pth
    ```
 
 ### Data Preparation
